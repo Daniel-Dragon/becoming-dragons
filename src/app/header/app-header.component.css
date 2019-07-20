@@ -1,0 +1,29 @@
+/* .navbar-nav.navbar-center {
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.navbar-nav {
+    margin: auto;
+}
+
+/* a {
+    color: black;
+} */
+
+@media (min-width:801px) {
+    li + li::before {
+        content: " | ";
+        position: inline;
+        font-size: 3.5rem;
+        color: rgba(0,0,0,.5);
+        /* margin-left: 20px;
+        margin-right: 20px; */
+    }
+}
+
+li.nav-item {
+    display: -webkit-inline-box;
+}
