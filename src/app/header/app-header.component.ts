@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app-header.component.css']
 })
 export class AppHeaderComponent {
-  private isNavbarCollapsed = true;
+  isNavbarCollapsed = true;
 }
