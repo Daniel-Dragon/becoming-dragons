@@ -5,4 +5,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./photo-gallery.component.css']
 })
 export class PhotoGalleryComponent {
+
+  constructor() {
+  }
 }
