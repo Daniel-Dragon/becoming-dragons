@@ -31,4 +31,5 @@
 
 html, body {
   font-family: 'rocky-condensed', serif !important;
+  color: rgba(0,0,0,.5) !important;
 }
