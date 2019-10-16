@@ -12,7 +12,7 @@ export class LoginComponent {
 
   constructor(private authService: AuthService, private router: Router) {}
 
-  private login() {
+  public login() {
     this.authService.login(this.form.password).subscribe(resp => {
       if (resp) {
         this.router.navigate(['guest-portal']);
