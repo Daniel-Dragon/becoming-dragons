@@ -5,13 +5,16 @@
     <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
       <ul class="navbar-nav navbar-center mr-auto">
         <li class="nav-item" >
-          <a class="nav-link display-4" routerLink="/guest-portal">guest portal</a>
+          <a class="nav-link display-4" routerLink="" routerLinkActive="active">home</a>
         </li>
         <li class="nav-item" >
-            <a class="nav-link display-4" routerLink="/about">about</a>
+          <a class="nav-link display-4" routerLink="guest-portal" routerLinkActive="active">guest portal</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link display-4" routerLink="about" routerLinkActive="active">about</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link display-4" routerLink="/photo-gallery">photo gallery</a>
+            <a class="nav-link display-4" routerLink="photo-gallery" routerLinkActive="active">photo gallery</a>
           </li>
       </ul>
     </div>

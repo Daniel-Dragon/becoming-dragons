@@ -10,12 +10,18 @@ import { AppFooterComponent } from './footer/app-footer.component';
 import { AboutComponent } from './about/about.component';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { GuestPortalComponent } from './guest-portal/guest-portal.component';
+import { AuthGuardService } from './services/auth-guard/auth-guard.service';
+import { AuthService } from './services/auth-service/auth-service.service';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'photo-gallery', component: PhotoGalleryComponent },
-  { path: 'guest-portal', component: GuestPortalComponent },
+  { path: 'guest-portal', component: GuestPortalComponent, canActivate: [AuthGuardService] },
+  { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
@@ -27,16 +33,22 @@ const appRoutes: Routes = [
     AboutComponent,
     PhotoGalleryComponent,
     GuestPortalComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

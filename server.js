@@ -2,8 +2,10 @@
 const express = require('express');
 const path = require('path');
 const ipa = require('instagram-private-api');
+require('dotenv').config();
 
 const app = express();
+app.use(express.json());
 
 // Instagram
 
@@ -25,6 +27,14 @@ const app = express();
 // })();
 
 // Instagram
+
+app.post('/api/login', (req, res) => {
+    if (req.body && req.body.password.toLowerCase() == process.env.PASSWORD) {
+        res.send(true);
+    } else {
+        res.sendStatus(401);
+    }
+});
 
 // Serve only the static files form the dist directory
 app.use(express.static(__dirname + '/dist/becoming-dragons'));
