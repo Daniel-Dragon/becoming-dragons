@@ -30,7 +30,7 @@ app.use(express.json());
 // Instagram
 
 app.post('/api/login', (req, res) => {
-    if (req.body && req.body.password.toLowerCase() == process.env.PASSWORD) {
+    if (req.body && req.body.password == process.env.PASSWORD) {
         res.send(true);
     } else {
         res.sendStatus(401);
@@ -44,5 +44,5 @@ app.get('/*', function(req,res) {
     res.sendFile(path.join(__dirname+'/dist/becoming-dragons/index.html'));
 });
 
-// Start the app by listening on the default Heroku port
+// Start the app by listening on the port.
 app.listen(process.env.PORT || 8080);
