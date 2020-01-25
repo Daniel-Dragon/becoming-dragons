@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
-    private auth = true;
+    private auth = false;
     constructor(public http: HttpClient) {}
 
     public isAuthenticated(): boolean {
