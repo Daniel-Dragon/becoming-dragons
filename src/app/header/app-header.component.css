@@ -3,16 +3,16 @@
 }
 
 .nav-link {
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 @media (min-width:801px) {
-    li + li::before {
+    li+li::before {
         content: " | ";
         position: inline;
-        font-size: 3.5rem;
-        color: rgba(0,0,0,.5);
-        margin-right: 50px;
+        font-size: 2.5rem;
+        color: rgba(0, 0, 0, .5);
+        margin-right: 25px;
         /* margin-left: 20px;
         margin-right: 20px; */
     }
@@ -20,4 +20,17 @@
 
 li.nav-item {
     display: -webkit-inline-box;
+}
+
+.nav-link {
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    font-style: italic;
+    color: #DBBEB0;
 }
