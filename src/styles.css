@@ -1,35 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 /* Background */
+
 .striped-background {
-  background: repeating-linear-gradient(
-    90deg,
-    #eeeae7,
-    #eeeae7 25px,
-    #f9f4f1 25px,
-    #f9f4f1 50px
-  );
+    background: repeating-linear-gradient( 90deg, #eeeae7, #eeeae7 25px, #f9f4f1 25px, #f9f4f1 50px);
 }
+
 
 /* Mobile 13px */
-@media only screen and (max-width: 600px) {
-  .striped-background {
-    background: repeating-linear-gradient(
-      90deg,
-      #eeeae7,
-      #eeeae7 13px,
-      #f9f4f1 13px,
-      #f9f4f1 26px
-    );
-  }
-}
 
+@media only screen and (max-width: 600px) {
+    .striped-background {
+        background: repeating-linear-gradient( 90deg, #eeeae7, #eeeae7 13px, #f9f4f1 13px, #f9f4f1 26px);
+    }
+}
 
 .playfair {
-  font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
-html, body {
-  font-family: 'rocky-condensed', serif !important;
-  color: rgba(0,0,0,.5) !important;
+html,
+body {
+    font-family: 'rocky-condensed', serif !important;
+    color: rgba(0, 0, 0, .5) !important;
 }

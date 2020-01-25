@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-12 text-center" style="margin-top: 2rem;">
+        <img [src]="image">
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 text-center" style="font-size: 1.875rem; text-transform: uppercase; margin-top: .5rem;">
+        {{name}}
+    </div>
+</div>
+<div class="row" *ngIf="role" style="font-size: 3rem; line-height: 2.5rem; color: #DBBEB0; text-transform: uppercase;">
+    <div class="col-12 text-center">
+        {{role}}
+    </div>
+</div>
+<div class="row" *ngIf="aka">
+    <div class="col-12 text-center">
+        {{aka}}
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-12 text-center">
+        {{bio}}
+    </div>
+</div>

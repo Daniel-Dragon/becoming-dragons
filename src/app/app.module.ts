@@ -15,6 +15,7 @@ import { AuthService } from './services/auth-service/auth-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HeadshotComponent } from './headshot/headshot.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    HeadshotComponent,
     AppComponent,
     AppHeaderComponent,
     AppFooterComponent,
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
     GuestPortalComponent,
     HomeComponent,
     LoginComponent
+    
   ],
   imports: [
     BrowserModule,
