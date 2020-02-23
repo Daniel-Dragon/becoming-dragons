@@ -4,16 +4,12 @@
 /* Background */
 
 .striped-background {
-    background: repeating-linear-gradient( 90deg, #eeeae7, #eeeae7 25px, #f9f4f1 25px, #f9f4f1 50px);
+    background: repeating-linear-gradient( 90deg, #eeeae7, #eeeae7 15px, #f9f4f1 15px, #f9f4f1 30px);
 }
 
 a {
     font-style: italic;
     color: #DBBEB0 !important;
-}
-
-a:visited {
-    color: #D67361 !important;
 }
 
 a:hover {
@@ -37,6 +33,7 @@ html,
 body {
     font-family: 'rocky-condensed', serif !important;
     color: rgba(0, 0, 0, .5) !important;
+    font-size: 1.25rem;
 }
 
 .shit-color {
