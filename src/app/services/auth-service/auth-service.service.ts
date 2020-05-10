@@ -10,8 +10,7 @@ export class AuthService {
     constructor(public http: HttpClient) {}
 
     public isAuthenticated(): boolean {
-        //return this.auth;
-        return true;
+        return this.auth;
     }
 
     public login(password: string): Observable<boolean> {
