@@ -1,7 +1,6 @@
 //Install express server
 const express = require('express');
 const path = require('path');
-const ipa = require('instagram-private-api');
 require('dotenv').config();
 const password = process.env.PASSWORD || ENV['PASSWORD'];
 
